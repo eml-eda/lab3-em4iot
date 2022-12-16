@@ -1,0 +1,25 @@
+#include "{{sensor_name}}.h"
+
+
+void {{sensor_name}}::set_attributes()
+{
+    i.set_timestep(SIM_STEP, sc_core::SC_SEC);
+}
+
+void {{sensor_name}}::initialize() {}
+
+void {{sensor_name}}::processing()
+{
+    if(cnt >= {{sensor_name.upper()}}_T_ACT &&
+       cnt < {{sensor_name.upper()}}_T_ACT + {{sensor_name.upper()}}_T_ON)
+    {
+        i.write({{sensor_name.upper()}}_I_ON);
+        cnt = (cnt + 1) % PERIOD;
+    }
+    else
+    {
+        i.write({{sensor_name.upper()}}_I_IDLE);
+        cnt = (cnt + 1) % PERIOD;
+    }
+}
+

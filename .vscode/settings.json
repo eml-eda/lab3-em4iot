@@ -1,0 +1,17 @@
+{
+    "makefile.extensionOutputFolder": "./.vscode",
+    "C_Cpp.errorSquiggles": "Disabled",
+    "terminal.integrated.allowWorkspaceConfiguration": true,
+    "C_Cpp.codeAnalysis.clangTidy.enabled": true,
+    "C_Cpp.codeAnalysis.clangTidy.checks.disabled": [
+        "llvm-header-guard"
+    ],
+    "files.associations": {
+        "*.tcc": "cpp",
+        "fstream": "cpp",
+        "initializer_list": "cpp",
+        "stdexcept": "cpp",
+        "string_view": "cpp",
+        "type_traits": "cpp"
+    },
+}

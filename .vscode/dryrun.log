@@ -1,0 +1,6 @@
+make --dry-run --keep-going --print-directory
+make: Entering directory '/home/risso/lab3-em4iot'
+make: Leaving directory '/home/risso/lab3-em4iot'
+ 
+make: *** No targets specified and no makefile found.  Stop.
+

@@ -1,0 +1,58 @@
+{
+"sim_step" : 1,
+"sim_len": 7736400,
+"period" : 120, 
+"vref_bus" : 3.3,
+"soc_init" : 1.0,
+"selfdisch_factor" : 0.0,
+"sensors" : [
+    {
+        "name": "air_quality_sensor",
+        "current_on": "48.2",
+        "current_idle": "0.002",
+        "activation_time": "0",
+        "time_on": "30"
+    },
+    {
+        "name": "methane_sensor",
+        "current_on": "18",
+        "current_idle": "0.002",
+        "activation_time": "0",
+        "time_on": "30"
+    },
+    {
+        "name": "temperature_sensor",
+        "current_on": "0.3",
+        "current_idle": "0.002",
+        "activation_time": "0",
+        "time_on": "6"
+    },
+    {
+        "name": "mic_click_sensor",
+        "current_on": "0.15",
+        "current_idle": "0.002",
+        "activation_time": "0",
+        "time_on": "12"
+    }
+],
+"mcu" : {
+    "states":[
+        {
+        "name": "ON",
+        "current": "13",
+        "time_on": "6"
+        }
+    ],
+    "current_idle": "0.002"
+},
+"rf" : {
+    "states":[
+	    {
+        "name": "ON",
+        "current": "0.1",
+        "time_on": "24"
+        }
+    ],
+    "current_idle": "0.001"
+    }
+}
